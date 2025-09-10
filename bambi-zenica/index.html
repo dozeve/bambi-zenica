@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="bs">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="google-site-verification" content="googleb985e7837373fa41.html" />
+
+  <title>Privatni vrtić BAMBI Zenica – Masarykova 43 | Upis | 06:30–19:00</title>
+
+  <!-- Canonical & hreflang – tvoj GitHub Pages URL -->
+  <link rel="canonical" href="https://dozeve.github.io/bambi-zenica/">
+  <link rel="alternate" href="https://dozeve.github.io/bambi-zenica/" hreflang="bs-BA">
+
+  <!-- Meta opis + robots -->
+  <meta name="description" content='Privatna predškolska ustanova "BAMBI" u Zenici (Masarykova 43). Radno vrijeme: 06:30–19:00. Sigurno i kreativno okruženje. Kontakt: 063 384 095 / 060 341 06 96.'/>
+  <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1" />
+  <meta name="theme-color" content="#e84a89"/>
+  <meta name="keywords" content="vrtić, privatni vrtić Zenica, vrtić Bambi Zenica, predškolska ustanova, dječiji vrtić Zenica" />
+
+  <!-- Open Graph / Twitter -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content='PPU "BAMBI" – Zenica'>
+  <meta property="og:title" content='Privatni vrtić BAMBI Zenica – Upis i kontakt'>
+  <meta property="og:description" content='Sigurno, kreativno okruženje od 2009. Masarykova 43, Zenica. Radno vrijeme: 06:30–19:00.'>
+  <meta property="og:image" content="kids.jpg">
+  <meta property="og:locale" content="bs_BA">
+  <meta property="og:url" content="https://dozeve.github.io/bambi-zenica/">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <!-- Favicons (zamijeni ako imaš logo) -->
+  <link rel="icon" href="kids.jpg">
+
+  <!-- Preconnect -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://www.google.com">
+  <link rel="preconnect" href="https://maps.googleapis.com">
+  <link rel="preconnect" href="https://maps.gstatic.com" crossorigin>
+
+  <!-- Preload hero slike za brži LCP -->
+  <link rel="preload" as="image" href="kids.jpg" imagesrcset="kids.jpg 1200w" imagesizes="100vw" />
+
+  <!-- Tailwind (CDN) -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Poppins','ui-sans-serif','system-ui'],
+            display: ['"Baloo 2"','Poppins','ui-sans-serif']
+          },
+          colors: {
+            brand: {
+              50:'#fff1f7',100:'#ffe4f0',200:'#fec7de',300:'#f99dbe',
+              400:'#f171a0',500:'#e84a89',600:'#d53675',700:'#b62662',
+              800:'#931f50',900:'#761b42'
+            }
+          },
+          boxShadow: { soft: '0 10px 30px -12px rgba(232,74,137,.35)' },
+          keyframes: {
+            float: {'0%,100%':{transform:'translateY(0)'},'50%':{transform:'translateY(-12px)'}},
+            glow:  {'0%,100%':{opacity:.55,transform:'scale(1)'},'50%':{opacity:.85,transform:'scale(1.05)'}}
+          },
+          animation: { float:'float 6s ease-in-out infinite', glow:'glow 8s ease-in-out infinite' }
+        }
+      }
+    }
+  </script>
+
+  <!-- Google fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&family=Baloo+2:wght@600;700&display=swap" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <style>
+    html{scroll-behavior:smooth}
+    :target{scroll-margin-top:92px}
+    .blob{filter:blur(60px);opacity:.35;background:radial-gradient(ellipse at center,#f99dbe 0%,#e84a89 35%,transparent 60%)}
+    .kids-bg{
+      position:relative;
+      background:
+        radial-gradient(120px 120px at 8% 20%, #fff7f9 0 70%, transparent 71%),
+        radial-gradient(140px 140px at 92% 18%, #fef6db 0 70%, transparent 71%),
+        radial-gradient(180px 180px at 12% 90%, #eaf8ff 0 70%, transparent 71%),
+        radial-gradient(160px 160px at 85% 80%, #eef9f0 0 70%, transparent 71%),
+        #ffffff;
+    }
+    .kids-dots{position:relative}
+    .kids-dots::after{
+      content:""; position:absolute; inset:0; pointer-events:none; z-index:0;
+      background-image:
+        radial-gradient(rgba(232,74,137,.10) 2px, transparent 2.2px),
+        radial-gradient(rgba(255,221,87,.12) 2px, transparent 2.2px),
+        radial-gradient(rgba(80,200,120,.10) 2px, transparent 2.2px),
+        radial-gradient(rgba(68,170,255,.10) 2px, transparent 2.2px);
+      background-size: 22px 22px, 26px 26px, 20px 20px, 24px 24px;
+      background-position: 0 0, 13px 11px, 7px 15px, 4px 3px;
+      mix-blend-mode: normal;
+    }
+    .balloon-field{ position:relative; overflow:hidden; }
+    @keyframes balloon-rise { 0%{transform:translate(-50%,0)} 100%{transform:translate(-50%,-220vh)} }
+    @keyframes balloon-sway { 0%{margin-left:-12px} 100%{margin-left:12px} }
+    .balloon{
+      position:absolute; top:100%; left:var(--x,50%);
+      width:var(--s,16px); height:var(--s,16px);
+      transform:translate(-50%,0); border-radius:50%;
+      pointer-events:none; opacity:.8; z-index:1; filter:saturate(.95);
+      background:
+        radial-gradient(circle at 30% 30%,
+          hsl(var(--h,330) 100% 97%),
+          hsl(var(--h,330) 90% 78%) 60%,
+          hsl(var(--h,330) 90% 78% / 0) 72%);
+      box-shadow:
+        0 6px 18px hsl(var(--h,330) 80% 70% / .18),
+        inset -4px -6px 10px hsl(var(--h,330) 80% 50% / .12);
+      animation:
+        balloon-rise var(--dur,26s) linear infinite,
+        balloon-sway calc(var(--dur,26s)*.6) ease-in-out infinite alternate;
+      animation-delay: var(--delay,0s), calc(var(--delay,0s)/2);
+    }
+    .balloon-field > *:not(.balloon){ position:relative; z-index:2; }
+    .plate-mask{ position:absolute;width:90px;height:18px;background:#000;opacity:.85;border-radius:4px;
+      filter:saturate(0.2) blur(0.2px);bottom:18%;left:52%; }
+  </style>
+
+  <!-- JSON-LD (Local SEO + FAQ) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": ["Preschool","ChildCare"],
+        "@id": "https://dozeve.github.io/bambi-zenica/#org",
+        "name": "PPU \"BAMBI\"",
+        "url": "https://dozeve.github.io/bambi-zenica/",
+        "image": "https://dozeve.github.io/bambi-zenica/kids.jpg",
+        "telephone": "+38763384095",
+        "email": "bema1992@hotmail.com",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Masarykova 43",
+          "addressLocality": "Zenica",
+          "postalCode": "72000",
+          "addressCountry": "BA"
+        },
+        "openingHoursSpecification": [{
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
+          "opens": "06:30",
+          "closes": "19:00"
+        }],
+        "areaServed": "Zenica",
+        "sameAs": ["https://www.google.com/maps?q=Masarykova%2043%2C%20Zenica"],
+        "hasMap": "https://www.google.com/maps?q=Masarykova%2043%2C%20Zenica"
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://dozeve.github.io/bambi-zenica/#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Kako izgleda proces upisa?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Kontaktirajte nas telefonom ili e-mailom. Po dogovoru zakazujemo sastanak, obilazak i kratku procjenu potreba djeteta."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Da li nudite prilagođenu ishranu?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Da. Uvažavamo alergije i posebne režime ishrane u dogovoru s roditeljima."
+            }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+  <!-- NAVBAR -->
+  <header class="fixed top-0 inset-x-0 z-50">
+    <nav class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <div class="h-16 mt-3 rounded-2xl bg-white/70 backdrop-blur border border-white/40 shadow-soft flex items-center justify-between px-4">
+        <a href="#pocetna" class="flex items-center gap-2 text-brand-700 font-extrabold text-xl" aria-label="Početna – Vrtić BAMBI Zenica">🦌 <span>BAMBI</span></a>
+
+        <ul class="hidden md:flex items-center gap-8 font-semibold text-gray-700">
+          <li><a class="hover:text-brand-700" href="#onama">O nama</a></li>
+          <li><a class="hover:text-brand-700" href="#zastomi">Zašto mi</a></li>
+          <li><a class="hover:text-brand-700" href="#galerija">Galerija</a></li>
+          <li><a class="hover:text-brand-700" href="#kontakt">Kontakt</a></li>
+        </ul>
+
+        <div class="hidden md:flex items-center gap-3">
+          <span class="hidden lg:inline-flex items-center gap-2 px-3 py-1 rounded-xl bg-brand-50 text-brand-700 border border-brand-100">
+            🕒 <strong>06:30–19:00</strong>
+          </span>
+          <a href="tel:+38763384095" class="px-4 py-2 rounded-xl bg-brand-600 text-white font-semibold hover:bg-brand-700 shadow-soft">Pozovi: 063 384 095</a>
+        </div>
+
+        <button id="navToggle" class="md:hidden p-2 rounded-lg border text-gray-700" aria-label="Otvori meni" aria-expanded="false">☰</button>
+      </div>
+    </nav>
+
+    <!-- Mobile menu -->
+    <div id="mobileNav" class="md:hidden hidden mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <div class="mt-2 rounded-2xl bg-white/90 backdrop-blur border border-white/40 shadow-soft">
+        <ul class="p-3 text-[15px] font-semibold">
+          <li><a class="block px-3 py-2 rounded-lg hover:bg-brand-50" href="#onama">O nama</a></li>
+          <li><a class="block px-3 py-2 rounded-lg hover:bg-brand-50" href="#zastomi">Zašto mi</a></li>
+          <li><a class="block px-3 py-2 rounded-lg hover:bg-brand-50" href="#galerija">Galerija</a></li>
+          <li><a class="block px-3 py-2 rounded-lg hover:bg-brand-50" href="#kontakt">Kontakt</a></li>
+          <li class="mt-2">
+            <span class="block text-center px-3 py-2 rounded-lg bg-brand-50 text-brand-700">🕒 06:30–19:00</span>
+          </li>
+          <li class="mt-2"><a href="tel:+38763384095" class="block text-center px-3 py-2 rounded-lg bg-brand-600 text-white">📞 Nazovi</a></li>
+        </ul>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section id="pocetna" class="relative mt-24 h-[72vh] sm:h-[82vh] overflow-hidden">
+    <img src="kids.jpg" alt="Privatni vrtić BAMBI Zenica – dječije igralište" class="absolute inset-0 w-full h-full object-cover" fetchpriority="high">
+    <div class="absolute inset-0 bg-gradient-to-t from-brand-800/60 via-brand-700/35 to-transparent"></div>
+
+    <div class="pointer-events-none">
+      <div class="blob absolute -top-24 -left-24 w-[420px] h-[420px] rounded-full animate-glow"></div>
+      <div class="blob absolute bottom-0 right-0 w-[460px] h-[460px] rounded-full animate-float"></div>
+    </div>
+
+    <div class="relative z-10 h-full flex items-center">
+      <div class="mx-auto max-w-4xl px-6 text-center">
+        <h1 class="font-display text-white text-4xl sm:text-5xl md:text-6xl font-extrabold drop-shadow">PPU „BAMBI” – Vrtić Zenica</h1>
+        <p class="mt-3 text-white/95 text-lg sm:text-xl">Ul. Masarykova 43, 72000 Zenica · Sigurno, kreativno i podržavajuće okruženje od 2009.</p>
+        <div class="mt-6 flex flex-col sm:flex-row items-center justify-center gap-3">
+          <!-- Primarno dugme (ostaje brand) -->
+          <a href="#kontakt" class="px-6 py-3 rounded-xl bg-brand-600 text-white font-semibold hover:bg-brand-700 shadow-soft">Kontakt i upis</a>
+          <!-- ✅ Sekundarno dugme – ZELENI OKVIR -->
+          <a href="#galerija" class="px-6 py-3 rounded-xl border-2 border-green-600 text-green-700 bg-white font-semibold hover:bg-green-50">Pogledaj galeriju</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- O NAMA -->
+  <section id="onama" class="py-20 kids-bg kids-dots balloon-field">
+    <div class="mx-auto max-w-7xl px-6 grid md:grid-cols-2 gap-12 items-center">
+      <div class="reveal">
+        <h2 class="text-4xl font-extrabold text-brand-700">O nama</h2>
+        <p class="mt-5 text-lg leading-relaxed text-gray-700">
+          U „BAMBI”-ju njegujemo radoznalost, maštu i samopouzdanje kroz igru i pažljivo osmišljene aktivnosti
+          primjerene uzrastu. Naše ograđeno dvorište sa mostićima i spravama podstiče motoriku, saradnju i druženje.
+          Roditelji su nam partneri – zajednički pratimo napredak i gradimo zdrave navike.
+        </p>
+        <ul class="mt-6 space-y-3 text-gray-700">
+          <li>✅ Individualni pristup i topla atmosfera</li>
+          <li>✅ Kreativne radionice: likovne, muzičke, dramske</li>
+          <li>✅ Siguran vanjski prostor i briga o sigurnosti</li>
+          <li>✅ Otvorena komunikacija sa roditeljima</li>
+        </ul>
+      </div>
+
+      <div class="grid grid-cols-2 gap-4 reveal">
+        <img src="gal-02.jpg.jpg" alt="Dvorište vrtića – mostić" class="rounded-2xl shadow-soft object-cover w-full h-52 sm:h-64" loading="lazy" decoding="async">
+        <img src="gal-01.jpg.jpg" alt="Igralište vrtića BAMBI" class="rounded-2xl shadow-soft object-cover w-full h-52 sm:h-64" loading="lazy" decoding="async">
+        <img src="gal-03.jpg.jpg" alt="Sprave za igru – BAMBI Zenica" class="rounded-2xl shadow-soft object-cover w-full h-52 sm:h-64" loading="lazy" decoding="async">
+        <img src="gal-04.jpg.jpg" alt="Kreativne aktivnosti djece" class="rounded-2xl shadow-soft object-cover w-full h-52 sm:h-64" loading="lazy" decoding="async">
+      </div>
+    </div>
+  </section>
+
+  <!-- ZAŠTO MI -->
+  <section id="zastomi" class="py-20 kids-bg kids-dots balloon-field">
+    <div class="mx-auto max-w-7xl px-6">
+      <h2 class="text-4xl font-extrabold text-center text-brand-700">Zašto odabrati nas?</h2>
+      <p class="text-center text-gray-600 mt-3 max-w-3xl mx-auto">Kvalitetan program, stručan kadar i sigurno okruženje u središtu Zenice.</p>
+
+      <div class="mt-10 grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div class="bg-white/95 rounded-2xl border border-white shadow-soft p-6 hover:shadow-xl hover:-translate-y-1 transition reveal">
+          <h3 class="text-xl font-bold mb-2">👩‍🏫 Stručni kadar</h3>
+          <p>Posvećeni vaspitači sa iskustvom u ranoj edukaciji i razvoju djece.</p>
+        </div>
+        <div class="bg-white/95 rounded-2xl border border-white shadow-soft p-6 hover:shadow-xl hover:-translate-y-1 transition reveal">
+          <h3 class="text-xl font-bold mb-2">🎨 Kreativne radionice</h3>
+          <p>Razvijamo maštu, govor, motoriku i socijalne vještine kroz igru.</p>
+        </div>
+        <div class="bg-white/95 rounded-2xl border border-white shadow-soft p-6 hover:shadow-xl hover:-translate-y-1 transition reveal">
+          <h3 class="text-xl font-bold mb-2">🏡 Siguran prostor</h3>
+          <p>Uređeno dvorište i prostorije prilagođene potrebama djece.</p>
+        </div>
+        <div class="bg-white/95 rounded-2xl border border-white shadow-soft p-6 hover:shadow-xl hover:-translate-y-1 transition reveal">
+          <h3 class="text-xl font-bold mb-2">🤝 Partnerstvo s roditeljima</h3>
+          <p>Otvorena komunikacija i zajedničko praćenje napretka djeteta.</p>
+        </div>
+        <div class="bg-white/95 rounded-2xl border border-white shadow-soft p-6 hover:shadow-xl hover:-translate-y-1 transition reveal">
+          <h3 class="text-xl font-bold mb-2">📍 Lokacija u gradu</h3>
+          <p>Masarykova 43 – lako dostupno, obezbijeđen parking.</p>
+        </div>
+        <div class="bg-white/95 rounded-2xl border border-white shadow-soft p-6 hover:shadow-xl hover:-translate-y-1 transition reveal">
+          <h3 class="text-xl font-bold mb-2">🌿 Vrijednosti</h3>
+          <p>Poštovanje, saradnja, empatija i zdrave navike od najranijeg uzrasta.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- GALERIJA -->
+  <section id="galerija" class="py-20 kids-bg kids-dots balloon-field">
+    <div class="mx-auto max-w-7xl px-6">
+      <h2 class="text-4xl font-extrabold text-center text-brand-700">Galerija</h2>
+      <p class="text-center text-gray-600 mt-3">Klikni na fotografiju za uvećanje.</p>
+
+      <div class="mt-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+        <button class="group relative overflow-hidden rounded-2xl shadow-soft focus:outline-none reveal" data-full="gal-01.jpg.jpg">
+          <img src="gal-01.jpg.jpg" alt="Dvorište – slika 1" class="w-full h-64 object-cover group-hover:scale-105 transition" loading="lazy" decoding="async">
+        </button>
+        <button class="group relative overflow-hidden rounded-2xl shadow-soft focus:outline-none reveal" data-full="gal-02.jpg.jpg">
+          <img src="gal-02.jpg.jpg" alt="Dvorište – slika 2" class="w-full h-64 object-cover group-hover:scale-105 transition" loading="lazy" decoding="async">
+        </button>
+        <button class="group relative overflow-hidden rounded-2xl shadow-soft focus:outline-none reveal" data-full="gal-03.jpg.jpg">
+          <img src="gal-03.jpg.jpg" alt="Igralište – slika 3" class="w-full h-64 object-cover group-hover:scale-105 transition" loading="lazy" decoding="async">
+        </button>
+
+        <!-- Mercedes sa zatamnjenim tablicama -->
+        <button class="group relative overflow-hidden rounded-2xl shadow-soft focus:outline-none reveal" data-full="hero-01.jpg.jpg" aria-label="Objekat sa parkingom">
+          <img src="hero-01.jpg.jpg" alt="Objekat i parking" class="w-full h-64 object-cover group-hover:scale-105 transition" loading="lazy" decoding="async">
+          <span class="plate-mask" aria-hidden="true"></span>
+        </button>
+
+        <button class="group relative overflow-hidden rounded-2xl shadow-soft focus:outline-none reveal" data-full="gal-04.jpg.jpg">
+          <img src="gal-04.jpg.jpg" alt="Kolaž – slika 4" class="w-full h-64 object-cover group-hover:scale-105 transition" loading="lazy" decoding="async">
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Lightbox -->
+  <div id="lightbox" class="fixed inset-0 z-[60] hidden items-center justify-center bg-black/80 p-4" role="dialog" aria-modal="true" aria-label="Pregled slike">
+    <button id="lbClose" class="absolute top-4 right-4 text-white text-3xl leading-none" aria-label="Zatvori pregled">×</button>
+    <img id="lbImg" src="" alt="Pregled slike" class="max-h-[90vh] max-w-[95vw] rounded-2xl shadow-2xl">
+  </div>
+
+  <!-- KONTAKT + MAPA -->
+  <section id="kontakt" class="py-20 kids-bg kids-dots balloon-field">
+    <div class="mx-auto max-w-7xl px-6 grid lg:grid-cols-2 gap-10 items-start">
+      <div class="bg-white/95 rounded-2xl shadow-soft p-8 border border-white reveal">
+        <h2 class="text-3xl font-extrabold text-brand-700">Kontakt</h2>
+        <p class="mt-2 text-gray-600">Za pitanja i informacije – javite nam se:</p>
+        <ul class="mt-6 space-y-3 text-lg">
+          <li>📍 <strong>Adresa:</strong> Ul. Masarykova 43, 72000 Zenica</li>
+          <li>🕒 <strong>Radno vrijeme:</strong> 06:30–19:00 (pon–pet)</li>
+          <li>📞 <strong>Telefon 1:</strong> <a class="text-brand-700 underline" href="tel:+38763384095">063 384 095</a></li>
+          <li>📞 <strong>Telefon 2:</strong> <a class="text-brand-700 underline" href="tel:+387603410696">060 341 06 96</a></li>
+          <li>📧 <strong>E-mail:</strong> <a class="text-brand-700 underline break-all" href="mailto:bema1992@hotmail.com">bema1992@hotmail.com</a></li>
+        </ul>
+        <div class="mt-6 flex flex-col sm:flex-row gap-3">
+          <a href="mailto:bema1992@hotmail.com" class="px-5 py-3 rounded-xl bg-brand-600 text-white font-semibold text-center hover:bg-brand-700">Pošalji e-mail</a>
+          <a href="https://www.google.com/maps?q=Masarykova%2043,%20Zenica" target="_blank" rel="noopener" class="px-5 py-3 rounded-xl bg-white border font-semibold text-center hover:bg-gray-50">Otvori u Google mapama</a>
+        </div>
+      </div>
+
+      <div class="w-full h-[420px] rounded-2xl overflow-hidden shadow-soft border border-white reveal">
+        <iframe title="Masarykova 43, Zenica – mapa"
+          src="https://www.google.com/maps?q=Masarykova%2043%2C%20Zenica&z=16&output=embed"
+          width="100%" height="100%" style="border:0" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="py-20 kids-bg kids-dots balloon-field">
+    <div class="mx-auto max-w-5xl px-6">
+      <h2 class="text-4xl font-extrabold text-center text-brand-700">Česta pitanja</h2>
+      <div class="mt-10 space-y-4">
+        <details class="group bg-white/95 rounded-xl shadow-soft border border-white p-5 reveal">
+          <summary class="flex cursor-pointer list-none items-center justify-between font-semibold">
+            Kako izgleda proces upisa?
+            <span class="text-brand-600 group-open:rotate-45 transition">+</span>
+          </summary>
+          <p class="mt-3 text-gray-700">Kontaktirajte nas telefonom ili e-mailom. Po dogovoru zakazujemo sastanak, obilazak i kratku procjenu potreba djeteta.</p>
+        </details>
+        <details class="group bg-white/95 rounded-xl shadow-soft border border-white p-5 reveal">
+          <summary class="flex cursor-pointer list-none items-center justify-between font-semibold">
+            Da li nudite prilagođenu ishranu?
+            <span class="text-brand-600 group-open:rotate-45 transition">+</span>
+          </summary>
+          <p class="mt-3 text-gray-700">Da. Uvažavamo alergije i posebne režime ishrane u dogovoru s roditeljima.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-gray-900 text-gray-300">
+    <div class="mx-auto max-w-7xl px-6 py-8 grid md:grid-cols-3 gap-6">
+      <div>
+        <h3 class="font-bold text-white text-lg">BAMBI vrtić</h3>
+        <p class="mt-2 text-sm">Privatna predškolska ustanova u Zenici. Sigurnost, kreativnost i zajedništvo – od 2009.</p>
+      </div>
+      <div>
+        <h4 class="font-semibold text-white">Adresa & vrijeme</h4>
+        <p class="mt-2 text-sm">Ul. Masarykova 43, 72000 Zenica, BiH<br>🕒 06:30–19:00 (pon–pet)</p>
+      </div>
+      <div>
+        <h4 class="font-semibold text-white">Kontakt</h4>
+        <p class="mt-2 text-sm">
+          Tel: <a class="underline" href="tel:+38763384095">063 384 095</a> ·
+          <a class="underline" href="tel:+387603410696">060 341 06 96</a><br>
+          E-mail: <a class="underline break-all" href="mailto:bema1992@hotmail.com">bema1992@hotmail.com</a>
+        </p>
+      </div>
+    </div>
+    <!-- Mali SEO paragraf – prirodan, za ključne fraze -->
+    <div class="mx-auto max-w-7xl px-6 pb-6 text-sm text-gray-400">
+      Tražite <strong>privatni vrtić u Zenici</strong>? PPU „BAMBI” na adresi Masarykova 43 nudi siguran prostor, stručan kadar i
+      cjelodnevni boravak. Pozovite nas za informacije o <em>upisu u vrtić Bambi Zenica</em>.
+    </div>
+    <div class="border-t border-white/10 text-center text-sm py-4">
+      © <span id="year"></span> „BAMBI”, Zenica. Sva prava zadržana.
+    </div>
+  </footer>
+
+  <!-- Mobilna quick-contact traka -->
+  <div class="md:hidden fixed bottom-4 inset-x-0 px-4 z-50">
+    <div class="mx-auto max-w-md bg-white/95 backdrop-blur border border-white/60 shadow-soft rounded-2xl flex justify-between p-3">
+      <a href="tel:+38763384095" class="flex-1 mr-2 text-center px-3 py-2 rounded-xl bg-brand-600 text-white font-semibold">📞 063 384 095</a>
+      <a href="mailto:bema1992@hotmail.com" class="flex-1 ml-2 text-center px-3 py-2 rounded-xl bg-gray-100 font-semibold">✉️ E-mail</a>
+    </div>
+  </div>
+
+  <!-- Back to top -->
+  <button id="toTop" class="fixed bottom-5 right-5 hidden md:flex items-center justify-center w-11 h-11 rounded-full bg-brand-600 text-white shadow-lg hover:bg-brand-700" aria-label="Na vrh">↑</button>
+
+  <!-- JS -->
+  <script>
+    // Mobile meni
+    const navToggle = document.getElementById('navToggle');
+    const mobileNav = document.getElementById('mobileNav');
+    navToggle?.addEventListener('click', () => {
+      mobileNav.classList.toggle('hidden');
+      navToggle.setAttribute('aria-expanded', mobileNav.classList.contains('hidden') ? 'false' : 'true');
+    });
+    document.querySelectorAll('#mobileNav a').forEach(a=>{
+      a.addEventListener('click', ()=>{
+        mobileNav.classList.add('hidden');
+        navToggle.setAttribute('aria-expanded','false');
+      });
+    });
+
+    // Lightbox
+    const lb = document.getElementById('lightbox');
+    const lbImg = document.getElementById('lbImg');
+    document.querySelectorAll('#galerija [data-full]').forEach(btn=>{
+      btn.addEventListener('click', ()=>{
+        lbImg.src = btn.getAttribute('data-full');
+        lb.classList.remove('hidden'); lb.classList.add('flex');
+      });
+    });
+    document.getElementById('lbClose').addEventListener('click', ()=>{
+      lb.classList.add('hidden'); lb.classList.remove('flex'); lbImg.src='';
+    });
+    lb.addEventListener('click', (e)=>{ if(e.target===lb) document.getElementById('lbClose').click(); });
+
+    // Reveal on scroll
+    const io = new IntersectionObserver(entries=>{
+      entries.forEach(e=>{
+        if(e.isIntersecting){
+          e.target.classList.add('opacity-100','translate-y-0');
+          e.target.classList.remove('opacity-0','translate-y-3');
+          io.unobserve(e.target);
+        }
+      })
+    },{threshold:.15});
+    document.querySelectorAll('.reveal').forEach(el=>{
+      el.classList.add('opacity-0','translate-y-3','transition','duration-700');
+      io.observe(el);
+    });
+
+    // Footer godina
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Back to top
+    const toTop = document.getElementById('toTop');
+    window.addEventListener('scroll', ()=>{
+      if(window.scrollY>600) toTop.classList.remove('hidden'); else toTop.classList.add('hidden');
+    });
+    toTop.addEventListener('click', ()=>window.scrollTo({top:0, behavior:'smooth'}));
+
+    // Leteći baloni
+    const HUES = [330, 8, 40, 120, 200, 260];
+    const COUNT_PER_SECTION = 36;
+
+    (function initBalloons(){
+      const sections = document.querySelectorAll('.balloon-field');
+      if (!sections.length) return;
+
+      sections.forEach(section => {
+        if (section.dataset.balloonsInit === '1') return;
+        section.dataset.balloonsInit = '1';
+
+        for (let i = 0; i < COUNT_PER_SECTION; i++) {
+          const b = document.createElement('span');
+          b.className = 'balloon';
+
+          const size  = (8 + Math.random()*16).toFixed(1) + 'px';
+          const left  = (Math.random()*100).toFixed(2) + '%';
+          const dur   = (18 + Math.random()*20).toFixed(1) + 's';
+          const delay = (Math.random()*20).toFixed(1) + 's';
+          const hue   = HUES[Math.floor(Math.random()*HUES.length)];
+
+          b.style.setProperty('--s', size);
+          b.style.setProperty('--x', left);
+          b.style.setProperty('--dur', dur);
+          b.style.setProperty('--delay', delay);
+          b.style.setProperty('--h', hue);
+
+          section.appendChild(b);
+        }
+      });
+    })();
+  </script>
+</body>
+</html>
+
+
+
+
+
+
